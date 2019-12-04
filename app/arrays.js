@@ -4,6 +4,9 @@
 // output: ['is', 'a', 'split', 'sentence.', 'This']
 
 function rearranger(arr) {
+
+    arr.push(arr.shift());
+    return arr
 }
 
 
@@ -16,6 +19,21 @@ function rearranger(arr) {
 // output: 42
 
 function largestNum(arr) {
+    let holdValue = 0;
+    let count = 0;
+    let duplicates
+    for (let i = 0; i < arr.length; i++) {
+        if (holdValue < arr[i]) {
+            holdValue = arr[i];
+        } else if (holdValue == arr[i]) {
+            count++
+        }
+    }
+    if (count > 1) {
+        duplicates = { holdValue: count }
+        return duplicates
+    }
+    return holdValue
 }
 
 
@@ -28,6 +46,17 @@ function largestNum(arr) {
 // output: [16, 8, 4, 28]
 
 function elemsTimesLength(arr) {
+
+    return arr1 = arr.map(x => x * arr.length);
+    // let multiplier = arr.length;
+    // let arr2 = [];
+    // let multipliedValue = 0;
+    // for (let i = 0; i <= multiplier; i++) {
+    //     multipliedValue = multiplier * arr[i];
+    //     arr2.push(multipliedValue);
+    //     multiplliedValue = 0;
+    // }
+    // return arr2;
 }
 
 
@@ -41,7 +70,8 @@ function elemsTimesLength(arr) {
 // Primitive data types - https://developer.mozilla.org/en-US/docs/Glossary/Primitive
 
 function arrayFlattener(arr) {
-
+    newArray = arr.flat();
+    return newArray;
 }
 
 
