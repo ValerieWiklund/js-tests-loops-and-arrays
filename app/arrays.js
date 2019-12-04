@@ -48,15 +48,15 @@ function largestNum(arr) {
 function elemsTimesLength(arr) {
 
     return arr1 = arr.map(x => x * arr.length);
-    // let multiplier = arr.length;
-    // let arr2 = [];
-    // let multipliedValue = 0;
-    // for (let i = 0; i <= multiplier; i++) {
-    //     multipliedValue = multiplier * arr[i];
-    //     arr2.push(multipliedValue);
-    //     multiplliedValue = 0;
-    // }
-    // return arr2;
+    let multiplier = arr.length;
+    let arr2 = [];
+    let multipliedValue = 0;
+    for (let i = 0; i <= multiplier; i++) {
+        multipliedValue = multiplier * arr[i];
+        arr2.push(multipliedValue);
+        multiplliedValue = 0;
+    }
+    return arr2;
 }
 
 
