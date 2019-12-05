@@ -107,6 +107,8 @@ let flights = [{
 function flightCost(destination, firstClass) {
     //***hint: use the find method***
 
+
+
 }
 
 
